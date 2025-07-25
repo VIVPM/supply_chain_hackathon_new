@@ -1,0 +1,56 @@
+# Backend (FastAPI, LLM, Data, Auth)
+fastapi
+uvicorn
+langchain
+langchain-groq
+groq
+python-dotenv
+httpx
+requests
+apscheduler
+slowapi
+passlib
+bcrypt
+python-jose
+fastapi-users[sqlalchemy]
+aiomysql
+PyMySQL
+SQLAlchemy
+alembic
+pytest
+pytest-asyncio
+pytest-cov
+python-multipart
+python-json-logger
+
+# Data Connectors
+pandas
+gspread
+google-auth
+google-auth-oauthlib
+pyairtable
+openpyxl
+
+# Social/News APIs
+openai
+tweepy
+twilio
+slack_sdk
+
+# Frontend (Streamlit, Plotly, Visualization)
+streamlit
+plotly
+matplotlib
+seaborn
+pydeck
+
+# Geocoding/Mapping
+geopy
+
+# Misc/Utils
+python-dateutil
+pytz
+watchdog
+
+# For authentication and user management
+# (see backend/README.md for MySQL setup) 
