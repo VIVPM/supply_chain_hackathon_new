@@ -7998,3 +7998,276 @@ AttributeError: module 'bcrypt' has no attribute '__about__'
 {"time": "2025-07-25 17:14:00,728", "level": "INFO", "module": "response_planner", "funcName": "wrapper", "lineno": "60", "message": "[EXIT] generate_action_plan returned [{'product_id': 'P1002', 'recommended_actions': ['Monitor weather updates for Nagpur to assess the severity of the disruption', 'Explore alternative routes or modes of transportation to minimize delay', 'Notify the Logistics Manager to assess and mitigate potential impacts'], 'responsible_party': 'logistics team', 'priority': 'Medium', 'escalation': 'Escalate to Regional Ops Director if delay exceeds 2 days', 'summary': 'Implement a proactive monitoring and assessment plan to mitigate the impact of the weather disruption on shipment P1002, with potential rerouting or mode changes to minimize delay.', 'risk_score': 45}]"}
 {"time": "2025-07-25 17:14:02,711", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/alert "HTTP/2 201 Created""}
 {"time": "2025-07-25 17:14:03,502", "level": "INFO", "module": "base", "funcName": "run_job", "lineno": "156", "message": "Job "periodic_disruption_check (trigger: interval[0:10:00], next run at: 2025-07-25 17:23:05 IST)" executed successfully"}
+{"time": "2025-07-25 18:23:43,837", "level": "INFO", "module": "base", "funcName": "add_job", "lineno": "507", "message": "Adding job tentatively -- it will be properly scheduled when the scheduler starts"}
+{"time": "2025-07-25 18:23:43,839", "level": "INFO", "module": "base", "funcName": "_real_add_job", "lineno": "1090", "message": "Added job "periodic_disruption_check" to job store "default""}
+{"time": "2025-07-25 18:23:43,839", "level": "INFO", "module": "base", "funcName": "start", "lineno": "214", "message": "Scheduler started"}
+{"time": "2025-07-25 18:24:18,012", "level": "INFO", "module": "base", "funcName": "add_job", "lineno": "507", "message": "Adding job tentatively -- it will be properly scheduled when the scheduler starts"}
+{"time": "2025-07-25 18:24:18,012", "level": "INFO", "module": "base", "funcName": "_real_add_job", "lineno": "1090", "message": "Added job "periodic_disruption_check" to job store "default""}
+{"time": "2025-07-25 18:24:18,012", "level": "INFO", "module": "base", "funcName": "start", "lineno": "214", "message": "Scheduler started"}
+{"time": "2025-07-25 18:24:31,401", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448071.401994-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:24:31,404", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448071.401994-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:24:31,404", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:24:32,675", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:24:32,691", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:24:32,692", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448071.401994-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:28:30,035", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448310.0335033-GET-http://localhost:8000/shipments path=/shipments query= headers={'user-agent': 'PostmanRuntime/7.44.1', 'accept': '*/*', 'cache-control': 'no-cache', 'postman-token': '112ef41e-c86b-4fa6-8180-a86af44e4871', 'host': 'localhost:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive'}"}
+{"time": "2025-07-25 18:28:30,053", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448310.0335033-GET-http://localhost:8000/shipments body="}
+{"time": "2025-07-25 18:28:30,056", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments"}
+{"time": "2025-07-25 18:28:30,066", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 307 GET http://localhost:8000/shipments"}
+{"time": "2025-07-25 18:28:30,068", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448310.0335033-GET-http://localhost:8000/shipments status=307"}
+{"time": "2025-07-25 18:28:30,080", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448310.0782633-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'user-agent': 'PostmanRuntime/7.44.1', 'accept': '*/*', 'cache-control': 'no-cache', 'postman-token': '112ef41e-c86b-4fa6-8180-a86af44e4871', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'referer': 'http://localhost:8000/shipments', 'host': 'localhost:8000'}"}
+{"time": "2025-07-25 18:28:30,080", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448310.0782633-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:28:30,082", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:28:30,605", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:28:30,632", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:28:30,639", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448310.0782633-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:33:17,493", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448597.4931293-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:33:17,493", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448597.4931293-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:33:17,493", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:33:18,822", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:33:18,866", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:33:18,870", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448597.4931293-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:34:12,293", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448652.2938554-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:34:12,295", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448652.2938554-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:34:12,297", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:34:12,842", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:34:12,854", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:34:12,859", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448652.2938554-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:34:13,121", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448653.121932-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:34:13,121", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448653.121932-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:34:13,121", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:34:13,935", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:34:14,033", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:34:14,071", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448653.121932-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:34:18,086", "level": "INFO", "module": "base", "funcName": "run_job", "lineno": "129", "message": "Running job "periodic_disruption_check (trigger: interval[0:10:00], next run at: 2025-07-25 18:44:18 IST)" (scheduled at 2025-07-25 18:34:18.005563+05:30)"}
+{"time": "2025-07-25 18:34:19,999", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1740", "message": "HTTP Request: GET http://api.aviationstack.com/v1/flights?access_key=90a463c4008f5a76cb74863110a7a599&arr_icao=VIDP&limit=5 "HTTP/1.1 429 Too Many Requests""}
+{"time": "2025-07-25 18:34:19,999", "level": "WARNING", "module": "event_monitor", "funcName": "fetch_air_events", "lineno": "175", "message": "AviationStack error: 429 {"error":{"code":"usage_limit_reached","message":"Your monthly usage limit has been reached. Please upgrade your Subscription Plan."}}"}
+{"time": "2025-07-25 18:34:20,882", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1740", "message": "HTTP Request: GET https://api.myshiptracking.com/v1/ships?key=K6dhrB4RApmmjzhdEgW2lMWnHGf1wIJ7YV&country=CN&limit=5 "HTTP/1.1 404 Not Found""}
+{"time": "2025-07-25 18:34:20,907", "level": "WARNING", "module": "event_monitor", "funcName": "fetch_sea_events", "lineno": "216", "message": "MyShipTracking error: 404 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Page Not Found | MyShipTracking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and full height */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    /* Dark blue gradient background */
+    body {
+      background: linear-gradient(135deg, #001f3f, #004080);
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+    header img {
+      max-width: 100px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 300;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+      font-weight: 300;
+      font-size: 1rem;
+      margin-top: 30px;
+    }
+    a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="myst.svg" alt="MyShipTracking Logo">
+    </header>
+    <h1>404</h1>
+    <p>Oops, the page you're looking for doesn't exist</p>
+    <a href="/">Back to Home</a>
+    <div class="footer">
+      <p>&copy; 2025 MyShipTracking</p>
+    </div>
+  </div>
+</body>
+</html>
+"}
+{"time": "2025-07-25 18:34:22,259", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1740", "message": "HTTP Request: GET https://newsapi.org/v2/top-headlines?apiKey=083b0a2f206e4270b787f992358ccbf5&q=strike+OR+port+closure+OR+disaster+OR+protest+OR+shutdown+OR+instability+OR+earthquake+OR+flood+OR+hurricane&language=en&pageSize=5&country=in "HTTP/1.1 200 OK""}
+{"time": "2025-07-25 18:34:22,264", "level": "INFO", "module": "event_monitor", "funcName": "fetch_news_events", "lineno": "65", "message": "NewsAPI events found: 0"}
+{"time": "2025-07-25 18:34:23,022", "level": "ERROR", "module": "event_monitor", "funcName": "fetch_twitter_events", "lineno": "132", "message": "Twitter fetch failed: 403 Forbidden
+453 - You currently have access to a subset of X API V2 endpoints and limited v1.1 endpoints (e.g. media post, oauth) only. If you need access to this endpoint, you may need a different access level. You can learn more here: https://developer.x.com/en/portal/product"}
+{"time": "2025-07-25 18:34:23,022", "level": "INFO", "module": "event_monitor", "funcName": "fetch_or_simulate_events", "lineno": "255", "message": "No real events found, using simulation."}
+{"time": "2025-07-25 18:34:24,193", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:34:25,105", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/alert?select=%2A&event-%3E%3Eevent_type=eq.Weather&event-%3E%3Elocation=eq.Mumbai&event-%3E%3Etimestamp=eq.2025-07-25T13%3A04%3A24.216894 "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:34:25,114", "level": "INFO", "module": "risk_analyzer", "funcName": "wrapper", "lineno": "115", "message": "[ENTER] analyze_risk args=({'location': 'Mumbai', 'event_type': 'Weather', 'severity': 'High', 'timestamp': '2025-07-25T13:04:24.216894', 'source': 'Simulated', 'mode': 'road', 'data_source': 'simulated'},) kwargs={}"}
+{"time": "2025-07-25 18:34:25,650", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:34:26,395", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/vendor?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:34:28,013", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK""}
+{"time": "2025-07-25 18:34:28,032", "level": "INFO", "module": "risk_analyzer", "funcName": "wrapper", "lineno": "119", "message": "[EXIT] analyze_risk returned [{'product_id': 'P1001', 'risk_score': 85, 'impact_level': 'Critical', 'delay_estimate': '2-4 days', 'cost_impact': '$10000', 'escalation': 'Notify VP of Global Ops and Expedite Shipment via Air Freight', 'summary': 'High-severity weather disruption in Mumbai may critically impact shipment P1001, requiring immediate escalation and potential shipment rerouting. Notify VP of Global Ops to expedite shipment via air freight.'}, {'product_id': 'P1003', 'risk_score': 40, 'impact_level': 'Medium', 'delay_estimate': '1-2 days', 'cost_impact': '$2000', 'escalation': 'Notify Logistics Team to Monitor and Adjust Route', 'summary': 'Weather disruption in Mumbai may moderately impact shipment P1003, requiring logistics team to monitor and adjust the route if necessary to minimize delays. Continuous monitoring is recommended.'}]"}
+{"time": "2025-07-25 18:34:28,033", "level": "INFO", "module": "response_planner", "funcName": "wrapper", "lineno": "56", "message": "[ENTER] generate_action_plan args=([{'product_id': 'P1001', 'risk_score': 85, 'impact_level': 'Critical', 'delay_estimate': '2-4 days', 'cost_impact': '$10000', 'escalation': 'Notify VP of Global Ops and Expedite Shipment via Air Freight', 'summary': 'High-severity weather disruption in Mumbai may critically impact shipment P1001, requiring immediate escalation and potential shipment rerouting. Notify VP of Global Ops to expedite shipment via air freight.'}, {'product_id': 'P1003', 'risk_score': 40, 'impact_level': 'Medium', 'delay_estimate': '1-2 days', 'cost_impact': '$2000', 'escalation': 'Notify Logistics Team to Monitor and Adjust Route', 'summary': 'Weather disruption in Mumbai may moderately impact shipment P1003, requiring logistics team to monitor and adjust the route if necessary to minimize delays. Continuous monitoring is recommended.'}],) kwargs={}"}
+{"time": "2025-07-25 18:34:29,451", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK""}
+{"time": "2025-07-25 18:34:29,457", "level": "INFO", "module": "response_planner", "funcName": "wrapper", "lineno": "60", "message": "[EXIT] generate_action_plan returned [{'product_id': 'P1001', 'recommended_actions': ['Reroute shipment via Chennai Port instead of Mumbai Port to avoid weather disruption', 'Expedite shipment via air freight to minimize delay', 'Notify the vendor to prepare for potential changes in logistics'], 'responsible_party': 'logistics team', 'priority': 'High', 'escalation': 'Escalate to VP of Global Ops', 'summary': 'Immediate action is required to mitigate the high-severity weather disruption in Mumbai, including rerouting and expediting shipment P1001 via air freight. The logistics team should work closely with the vendor to implement these changes.', 'risk_score': 85}, {'product_id': 'P1003', 'recommended_actions': ['Monitor weather updates and adjust the route if necessary to minimize delays', 'Consider rerouting via an alternative logistics path, such as the Hyderabad-Bangalore route', 'Notify the vendor to prepare for potential changes in logistics'], 'responsible_party': 'logistics team', 'priority': 'Medium', 'escalation': 'Escalate to Regional Ops Director if delay exceeds 2 days', 'summary': 'The logistics team should closely monitor the weather situation and adjust the route for shipment P1003 if necessary to minimize delays, with potential escalation to the Regional Ops Director if the delay exceeds 2 days.', 'risk_score': 40}]"}
+{"time": "2025-07-25 18:34:29,848", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/alert "HTTP/2 201 Created""}
+{"time": "2025-07-25 18:34:29,867", "level": "INFO", "module": "base", "funcName": "run_job", "lineno": "156", "message": "Job "periodic_disruption_check (trigger: interval[0:10:00], next run at: 2025-07-25 18:44:18 IST)" executed successfully"}
+{"time": "2025-07-25 18:38:21,436", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448901.4352872-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:38:21,436", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448901.4352872-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:38:21,438", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:38:22,045", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:38:22,045", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:38:22,045", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448901.4352872-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:38:48,601", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753448928.6014333-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:38:48,601", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753448928.6014333-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:38:48,601", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:38:49,054", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:38:49,063", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:38:49,077", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753448928.6014333-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:41:04,431", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753449064.4315784-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:41:04,431", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753449064.4315784-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:41:04,431", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:41:05,141", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:41:05,145", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:41:05,149", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753449064.4315784-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:41:07,683", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "28", "message": "[REQUEST] 1753449067.683621-GET-http://localhost:8000/shipments/ path=/shipments/ query= headers={'host': 'localhost:8000', 'connection': 'keep-alive', 'sec-ch-ua-platform': '"Windows"', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36', 'sec-ch-ua': '"Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"', 'sec-ch-ua-mobile': '?0', 'accept': '*/*', 'origin': 'http://localhost:8080', 'sec-fetch-site': 'same-site', 'sec-fetch-mode': 'cors', 'sec-fetch-dest': 'empty', 'referer': 'http://localhost:8080/', 'accept-encoding': 'gzip, deflate, br, zstd', 'accept-language': 'en-US,en;q=0.9'}"}
+{"time": "2025-07-25 18:41:07,685", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "31", "message": "[REQUEST BODY] 1753449067.683621-GET-http://localhost:8000/shipments/ body="}
+{"time": "2025-07-25 18:41:07,687", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "12", "message": "Request: GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:41:07,994", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:41:08,004", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "16", "message": "Response: 200 GET http://localhost:8000/shipments/"}
+{"time": "2025-07-25 18:41:08,008", "level": "INFO", "module": "middleware", "funcName": "dispatch", "lineno": "34", "message": "[RESPONSE] 1753449067.683621-GET-http://localhost:8000/shipments/ status=200"}
+{"time": "2025-07-25 18:44:18,024", "level": "INFO", "module": "base", "funcName": "run_job", "lineno": "129", "message": "Running job "periodic_disruption_check (trigger: interval[0:10:00], next run at: 2025-07-25 18:54:18 IST)" (scheduled at 2025-07-25 18:44:18.005563+05:30)"}
+{"time": "2025-07-25 18:44:19,999", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1740", "message": "HTTP Request: GET http://api.aviationstack.com/v1/flights?access_key=90a463c4008f5a76cb74863110a7a599&arr_icao=VIDP&limit=5 "HTTP/1.1 429 Too Many Requests""}
+{"time": "2025-07-25 18:44:20,013", "level": "WARNING", "module": "event_monitor", "funcName": "fetch_air_events", "lineno": "175", "message": "AviationStack error: 429 {"error":{"code":"usage_limit_reached","message":"Your monthly usage limit has been reached. Please upgrade your Subscription Plan."}}"}
+{"time": "2025-07-25 18:44:20,797", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1740", "message": "HTTP Request: GET https://api.myshiptracking.com/v1/ships?key=K6dhrB4RApmmjzhdEgW2lMWnHGf1wIJ7YV&country=CN&limit=5 "HTTP/1.1 404 Not Found""}
+{"time": "2025-07-25 18:44:20,800", "level": "WARNING", "module": "event_monitor", "funcName": "fetch_sea_events", "lineno": "216", "message": "MyShipTracking error: 404 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Page Not Found | MyShipTracking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and full height */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    /* Dark blue gradient background */
+    body {
+      background: linear-gradient(135deg, #001f3f, #004080);
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+    header img {
+      max-width: 100px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 300;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      transition: background 0.3s, color 0.3s;
+      font-weight: 300;
+      font-size: 1rem;
+      margin-top: 30px;
+    }
+    a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="myst.svg" alt="MyShipTracking Logo">
+    </header>
+    <h1>404</h1>
+    <p>Oops, the page you're looking for doesn't exist</p>
+    <a href="/">Back to Home</a>
+    <div class="footer">
+      <p>&copy; 2025 MyShipTracking</p>
+    </div>
+  </div>
+</body>
+</html>
+"}
+{"time": "2025-07-25 18:44:21,437", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1740", "message": "HTTP Request: GET https://newsapi.org/v2/top-headlines?apiKey=083b0a2f206e4270b787f992358ccbf5&q=strike+OR+port+closure+OR+disaster+OR+protest+OR+shutdown+OR+instability+OR+earthquake+OR+flood+OR+hurricane&language=en&pageSize=5&country=in "HTTP/1.1 200 OK""}
+{"time": "2025-07-25 18:44:21,437", "level": "INFO", "module": "event_monitor", "funcName": "fetch_news_events", "lineno": "65", "message": "NewsAPI events found: 0"}
+{"time": "2025-07-25 18:44:22,197", "level": "ERROR", "module": "event_monitor", "funcName": "fetch_twitter_events", "lineno": "132", "message": "Twitter fetch failed: 403 Forbidden
+453 - You currently have access to a subset of X API V2 endpoints and limited v1.1 endpoints (e.g. media post, oauth) only. If you need access to this endpoint, you may need a different access level. You can learn more here: https://developer.x.com/en/portal/product"}
+{"time": "2025-07-25 18:44:22,197", "level": "INFO", "module": "event_monitor", "funcName": "fetch_or_simulate_events", "lineno": "255", "message": "No real events found, using simulation."}
+{"time": "2025-07-25 18:44:23,066", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:44:24,176", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/alert?select=%2A&event-%3E%3Eevent_type=eq.Port+Congestion&event-%3E%3Elocation=eq.Delhi&event-%3E%3Etimestamp=eq.2025-07-25T13%3A14%3A23.103491 "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:44:24,184", "level": "INFO", "module": "risk_analyzer", "funcName": "wrapper", "lineno": "115", "message": "[ENTER] analyze_risk args=({'location': 'Delhi', 'event_type': 'Port Congestion', 'severity': 'Medium', 'timestamp': '2025-07-25T13:14:23.103491', 'source': 'Simulated', 'mode': 'road', 'data_source': 'simulated'},) kwargs={}"}
+{"time": "2025-07-25 18:44:24,556", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/shipment?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:44:24,872", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: GET https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/vendor?select=%2A "HTTP/2 200 OK""}
+{"time": "2025-07-25 18:44:26,121", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK""}
+{"time": "2025-07-25 18:44:26,136", "level": "INFO", "module": "risk_analyzer", "funcName": "wrapper", "lineno": "119", "message": "[EXIT] analyze_risk returned [{'product_id': 'P1002', 'risk_score': 80, 'impact_level': 'Critical', 'delay_estimate': '3-5 days', 'cost_impact': '15000-20000', 'escalation': 'Notify VP of Global Ops and expedite shipment via alternative route', 'summary': 'The shipment of P1002 is at critical risk due to port congestion in Delhi, requiring immediate escalation and potential re-routing to mitigate delays and cost impacts.'}, {'product_id': 'P3001', 'risk_score': 70, 'impact_level': 'High', 'delay_estimate': '2-4 days', 'cost_impact': '10000-15000', 'escalation': 'Notify Logistics Manager and consider air freight as an alternative', 'summary': 'The shipment of P3001 is at high risk due to port congestion in Delhi, necessitating close monitoring and potential escalation to minimize delays and cost impacts.'}]"}
+{"time": "2025-07-25 18:44:26,138", "level": "INFO", "module": "response_planner", "funcName": "wrapper", "lineno": "56", "message": "[ENTER] generate_action_plan args=([{'product_id': 'P1002', 'risk_score': 80, 'impact_level': 'Critical', 'delay_estimate': '3-5 days', 'cost_impact': '15000-20000', 'escalation': 'Notify VP of Global Ops and expedite shipment via alternative route', 'summary': 'The shipment of P1002 is at critical risk due to port congestion in Delhi, requiring immediate escalation and potential re-routing to mitigate delays and cost impacts.'}, {'product_id': 'P3001', 'risk_score': 70, 'impact_level': 'High', 'delay_estimate': '2-4 days', 'cost_impact': '10000-15000', 'escalation': 'Notify Logistics Manager and consider air freight as an alternative', 'summary': 'The shipment of P3001 is at high risk due to port congestion in Delhi, necessitating close monitoring and potential escalation to minimize delays and cost impacts.'}],) kwargs={}"}
+{"time": "2025-07-25 18:44:27,495", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK""}
+{"time": "2025-07-25 18:44:27,495", "level": "INFO", "module": "response_planner", "funcName": "wrapper", "lineno": "60", "message": "[EXIT] generate_action_plan returned [{'product_id': 'P1002', 'recommended_actions': ['Reroute the shipment via the Chennai Port instead of Delhi Port to avoid congestion', 'Expedite the shipment via an alternative route, such as the Mumbai Port, if feasible', 'Consider air freight as a last resort to minimize delays'], 'responsible_party': 'Logistics Team', 'priority': 'High', 'escalation': 'Escalate to VP of Global Ops', 'summary': 'Implement immediate rerouting and potential escalation to mitigate critical delays and cost impacts for P1002 shipment.', 'risk_score': 80}, {'product_id': 'P3001', 'recommended_actions': ['Monitor the shipment closely and prepare for potential rerouting via the Kolkata Port if congestion in Delhi persists', 'Consider air freight as an alternative to minimize delays if rerouting is not feasible', 'Negotiate with the vendor for potential discounts or expedited services to offset costs'], 'responsible_party': 'Logistics Manager', 'priority': 'High', 'escalation': 'Escalate to Regional Ops Director if necessary', 'summary': 'Closely monitor the P3001 shipment and prepare for potential mitigation steps, including rerouting and air freight, to minimize delays and cost impacts.', 'risk_score': 70}]"}
+{"time": "2025-07-25 18:44:27,813", "level": "INFO", "module": "_client", "funcName": "_send_single_request", "lineno": "1025", "message": "HTTP Request: POST https://vblsqqpigxxpvzyfegul.supabase.co/rest/v1/alert "HTTP/2 201 Created""}
+{"time": "2025-07-25 18:44:27,813", "level": "INFO", "module": "base", "funcName": "run_job", "lineno": "156", "message": "Job "periodic_disruption_check (trigger: interval[0:10:00], next run at: 2025-07-25 18:54:18 IST)" executed successfully"}
